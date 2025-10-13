@@ -46,7 +46,7 @@ This project showcases my work, skills, and experience as a developer, along wit
 ## 👨‍💻 Author
 
 **Eduardo D. Negri**  
-📧 [edu.denegri@gmail.com]  
+📧 [Email Contact](edu.denegri@gmail.com)  
 🌍 [LinkedIn Profile](https://www.linkedin.com/in/eduardodnegri/)  
 💻 [GitHub Profile](https://github.com/edu8686)
 
