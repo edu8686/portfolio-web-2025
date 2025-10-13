@@ -19,20 +19,6 @@ This project showcases my work, skills, and experience as a developer, along wit
 
 ---
 
-## 📂 Project Structure
-
-/portfolio
-├── /src
-│ ├── /components # Reusable UI components
-│ ├── /pages # Main pages (Home, About, Projects, Contact)
-│ ├── /assets # Images, icons, and other static resources
-│ ├── App.jsx
-│ └── index.js
-├── package.json
-└── README.md
-
----
-
 ## ✨ Features
 
 - Responsive design for mobile and desktop  
