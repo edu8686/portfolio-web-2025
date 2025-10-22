@@ -4,8 +4,8 @@ const projectResources = [
     title: "Portfolio Website",
     resources: [
       {
-        type: "video",
-        url: "https://res.cloudinary.com/eduardonegri/video/upload/v1234/portfolio/proyecto1/demo.mp4",
+        type: "image",
+        url: "https://res.cloudinary.com/dfgg0jygh/image/upload/v1761150419/Captura_portfolio_u3ro5u.png",
       },
     ],
   },

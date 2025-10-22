@@ -4,7 +4,6 @@ import Carousel from "../components/Carousel"; // asegúrate de la ruta
 import mediaResources from "../data/mediaResources"; // el array con id, title y resources
 import projects from "../data/projects";
 
-
 const Projects = () => {
   return (
     <div className="px-6 py-12 md:ml-48 flex justify-center">
@@ -37,6 +36,18 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+
+              {/* Link al repositorio */}
+              {project.linkRepo && (
+                <a
+                  href={project.linkRepo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                >
+                  Ver Repositorio
+                </a>
+              )}
 
               {/* Carousel */}
               {projectData && projectData.resources.length > 0 && (

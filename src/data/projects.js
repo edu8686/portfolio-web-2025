@@ -25,7 +25,7 @@ const projects = [
     description: "A blogging platform with general view for non-logged-in users and full view with comments for registered users.",
     stack: ["React", "Vite", "JavaScript", "HTML", "CSS", "Express", "Passport-local", "Passport-jwt", "jsonwebtoken", "Prisma"],
     linkRepo: "https://github.com/edu8686/blog-app",
-    linkDeploy: "https://blog-app-1-2fcm.onrender.com"
+    linkDeploy: ""
   },
   {
     id: 4,
