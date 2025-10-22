@@ -7,17 +7,19 @@ const About = () => {
       <h2 className="text-3xl font-semibold text-gray-700 mb-6">About Me</h2>
       <div className="space-y-4">
         <p className="text-gray-700 text-lg leading-relaxed">
-          Con formación académica en Ciencia Política, fui involucrándome en 
-          el mundo de la tecnología y el software, primero de la mano de Data Science, 
-          luego me fui capacitando en el fascinante mundo del Desarrollo de Software.
+          With an academic background in Political Science, I gradually became
+          involved in the world of technology and software — first through Data
+          Science, and later by training in the fascinating field of Software
+          Development.
         </p>
+
         <p className="text-gray-600 text-lg leading-relaxed">
-          Hoy soy un desarrollador full stack apasionado por crear aplicaciones web
-          completas, con interfaces limpias y backends eficientes. Me gusta
-          aprender nuevas tecnologías y aplicarlas en proyectos que tengan
-          impacto real. Actualmente estoy enfocado en React, Node.js y bases de
-          datos, explorando la integración de soluciones front-end y back-end. Sin embargo,
-          tengo formación también en Python y Java.
+          Today, I am a full stack developer passionate about building complete
+          web applications with clean interfaces and efficient backends. I enjoy
+          learning new technologies and applying them to projects that have a
+          real impact. I'm currently focused on React, Node.js, and databases,
+          exploring the integration of front-end and back-end solutions.
+          However, I also have experience with Python and Java.
         </p>
       </div>
     </div>

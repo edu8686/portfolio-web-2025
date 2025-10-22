@@ -13,14 +13,13 @@ const Hero = ({ onClickCTA }) => {
         Full Stack Developer | Web & Database
       </h2>
       <p className="text-gray-300 mt-4 max-w-xl">
-        Apasionado por construir aplicaciones web completas, interfaces limpias
-        y backends eficientes.
+        Passionate about building full web applications, clean interfaces, and efficient backends.
       </p>
       <button
         onClick={onClickCTA}
         className="mt-8 bg-white text-[#2C3E50] font-semibold px-6 py-3 rounded-lg hover:bg-gray-300 transition"
       >
-        Ver proyectos
+        View my projects
       </button>
     </section>
   );
