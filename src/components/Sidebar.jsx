@@ -1,16 +1,46 @@
 import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const Sidebar = ({ isVertical, scrollToSection }) => {
+const Sidebar = ({ isVertical }) => {
   const links = ["Home", "Projects", "About", "Contact"];
   const [activeLink, setActiveLink] = useState("Home");
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleClick = (link) => {
     setActiveLink(link);
-    scrollToSection?.(link);
+
+    if (link === "Projects") {
+      if (location.pathname !== "/") {
+        // Navegar a home y luego hacer scroll
+        navigate("/", { replace: false });
+        setTimeout(() => {
+          const section = document.getElementById("projects");
+          section?.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      } else {
+        const section = document.getElementById("projects");
+        section?.scrollIntoView({ behavior: "smooth" });
+      }
+      return;
+    }
+
+    // Para otras secciones
+    if (location.pathname !== "/") {
+      navigate("/", { replace: false });
+      setTimeout(() => {
+        const section = document.getElementById(link.toLowerCase());
+        section?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else {
+      const section = document.getElementById(link.toLowerCase());
+      section?.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
-  // Detectar scroll para actualizar activeLink automáticamente
   useEffect(() => {
+    if (location.pathname !== "/") return;
+
     const handleScroll = () => {
       const scrollPos = window.scrollY + window.innerHeight / 3;
 
@@ -25,7 +55,7 @@ const Sidebar = ({ isVertical, scrollToSection }) => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [links]);
+  }, [links, location.pathname]);
 
   return (
     <nav
@@ -57,4 +87,3 @@ const Sidebar = ({ isVertical, scrollToSection }) => {
 };
 
 export default Sidebar;
-

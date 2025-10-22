@@ -12,7 +12,7 @@
     "image": "/images/pantalla-messaging-app.png",
     "title": "Messaging App",
     "description": "A web application that allows users to sign up, create a personal profile, and send messages in individual or group chats. Authentication and authorization implemented using Passport-local, Passport-jwt, and jsonwebtoken.",
-    "stack": ["React", "Vite", "JavaScript", "HTML", "CSS", "Express", "Passport-local", "Passport-jwt", "jsonwebtoken", "Prisma"],
+    "stack": ["React", "Vite", "JavaScript", "HTML", "CSS", "Express", "Passport-local", "Passport-jwt", "jsonwebtoken", "Prisma", "Render", "Cloudinary"],
     "link": "https://github.com/edu8686/messaging-app"
   },
   {
